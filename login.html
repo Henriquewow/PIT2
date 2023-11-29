@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            display: flex;
+            width: 80%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .left-side {
+            flex: 1;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left-side img {
+            width: 80%;
+            max-width: 300px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="left-side">
+            <img src="seu-logo.png" alt="Logo">
+            <h2>Bem-vindo ao Sistema</h2>
+        </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
